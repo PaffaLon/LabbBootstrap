@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<body>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen"/>
+    </head>
+    <body>
+        <div id=wrapper class="flex-column">
+            <nav id="NavBar" class="d-flex flex-row">
+                <a id="NavLogo">
+                    <button id="NavLogo" class="navButton button">
+                        <img id="Logo">
+                        </img>
+                    </button>
+                </a>
+
+                <a id="NavHome" class="navLink" href="index.html">
+                    <button id="Home" clas="navButton button d-inline-flex">
+                        <p>Home</p>
+                    </button>
+                </a>
+
+                <a id="NavGallery" class="navLink" href="index.html">
+                    <button id="Gallery" clas="navButton button d-inline-flex">
+                        <p>Gallery</p>
+                    </button>
+                </a>
+
+                <a id="NavContactForm" class="navLink" href="index.html">
+                    <button id="ContactForm" clas="navButton button d-inline-flex">
+                        <p>Contact Form</p>
+                    </button>
+                </a>
+            </nav>
+            <div id="Content" class="">
+                <div id="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="prev" onclick="plusSlides(1)">&#10094</a>
+
+                    <!-- The dots/circles -->
+                    </div id="slide-buttons">
+                        <span class="dot" onclick="CurrentSlide(1)"></span>
+                        <span class="dot" onclick="CurrentSlide(2)"></span>
+                        <span class="dot" onclick="CurrentSlide(3)"></span>
+                    </div>
+                </div>
+                
+                <div id="Gallery">
+                    <img src="smiley.gif" alt="Smiley face" height="42" width="42"> 
+                </div>
+            </div>  
+            <footer id="Footer" class="">
+                Flex Item 3
+            </footer>
+        </div><!--END: NavBar-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src=""></script>
+    </body>
+</body>

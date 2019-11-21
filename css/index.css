@@ -1,0 +1,22 @@
+
+/******************************/
+/***    NavBar - Elements   ***/
+#NavBar{
+    position: static;
+}
+
+.navLink, .button{
+    width: 100%;
+}
+
+/******************************/
+/***    Page Main Content   ***/
+#Content{
+
+}
+
+/******************/
+/***    Footer  ***/
+#Footer{
+    position: static;
+}
