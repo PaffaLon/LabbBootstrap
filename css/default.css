@@ -1,0 +1,22 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	widows: auto;
+	background-image: url("");
+}
+
+/*******************************************/
+/* Default Value For Common Block Elements */
+/*******************************************/
+div, aside, footer, nav, aside, button{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	right: 0px;
+	font-family: sans-serif;
+/*	background-color: rgba(247, 247, 247, 0.5); */
+}
