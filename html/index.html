@@ -2,6 +2,7 @@
 <body>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/theme/creative.css"/>
         <link rel="stylesheet" type="text/css" href="../css/default.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen"/>
     </head>
@@ -9,10 +10,8 @@
         <div id=wrapper class="d-flex flex-column bd-highelight mb-3">
                 <nav id="NavBar" class="d-flex flex-row">
                         <a id="NavLogo">
-                            <button id="NavLogo" class="navButton button">
-                                <img id="Logo">
-                                </img>
-                            </button>
+                                <img id="Logo" src="../images/icons/logo/logo1.png">
+                            </img>
                         </a>
         
                         <a id="NavHome" class="navLink" href="index.html">
@@ -33,16 +32,25 @@
                             </button>
                         </a>
                     </nav>
-            <div id="Content" class="">
-                    <Article id="Article-1">Art-1</Article>
-                    <Article id="Article-2">Art-2</Article>
-                    <Article id="Article-3">Art-3</Article>
-                    <Article id="Article-4">Art-4</Article>
-                    <Article id="Article-5">Art-5</Article>
-                    <Article id="Article-6">Art-6</Article>
+            <div id="Content-Container" class="flex-column">
+                <div class="row">
+                    <div id="Aside-L" class="aside">
+                    </div>
+                    <div id="Aside-R" class="aside">
+                    </div>
+                
+                    <div íd="Content" class="column">
+                        <Article id="Article-1" class="article">Art-1</Article>
+                        <Article id="Article-2" class="article">Art-2</Article>
+                        <Article id="Article-3" class="article">Art-3</Article>
+                        <Article id="Article-4" class="article">Art-4</Article>
+                        <Article id="Article-5" class="article">Art-5</Article>
+                        <Article id="Article-6" class="article">Art-6</Article>
+                    </div>
+                </div>
             </div>  
-            <footer id="Footer" class="">
-                Flex Item 3
+            <footer id="Footer" class="flex-column">
+                Footer
             </footer>
         </div><!--END: NavBar-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

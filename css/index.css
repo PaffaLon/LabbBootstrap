@@ -5,6 +5,11 @@
     position: static;
 }
 
+#Logo{
+    width: 160px;
+    height: 140px;
+}
+
 .navLink, .button{
     width: 100%;
 }
