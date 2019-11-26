@@ -3,6 +3,9 @@
 /***    NavBar - Elements   ***/
 #NavBar{
     position: static;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.1);
 }
 
 #Logo{
@@ -12,6 +15,11 @@
 
 .navLink, .button{
     width: 100%;
+    height: 60px;
+}
+
+.navButton{
+    
 }
 
 /******************************/
@@ -20,8 +28,19 @@
 
 }
 
+.article{
+    width: 50px;
+    height: 100px;
+    background-color: green;
+}
+
 /******************/
 /***    Footer  ***/
 #Footer{
     position: static;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 1);
+    text-align: center;
+    color: wheat;
 }
