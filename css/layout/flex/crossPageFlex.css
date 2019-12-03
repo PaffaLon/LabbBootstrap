@@ -1,0 +1,74 @@
+/******************************/
+/***    Wrapper - Flex      ***/
+#TopContainer{
+    order: 1;
+}
+#MiddleContainer{
+    order: 2;
+}
+#Footer{
+    order: 3;
+}
+
+/***********************/
+/* Main Nav Bar - Flex */
+#MainNavBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#Home{
+    order: 1;
+}
+
+#Gallery{
+    order: 2;
+}
+
+#ContactFrom{
+    order: 3;
+}
+
+/**************************/
+/***    Footer - Flex   ***/
+#Footer{
+    display: flex;
+}
+
+
+/**************************/
+/***    Flex Column     ***/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/**********************/
+/***    Flex Row    ***/
+.flex-row{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-flow: start;
+}
+
+/**********************/
+/***    Flex-Row-1  ***/
+.flexRow-1{
+    display: flex;
+    flex-direction: row;
+}
+.flex-row > .flex-row-1-item-1{
+
+}
+/**********************/
+/***    Flex-Row-2  ***/
+.flex-row-2-item-1{
+    order: 1;
+}
+.flex-row-2-item-2{
+    order: 2;
+}
+/**********************/
+/***    Flex-Row-3  ***/

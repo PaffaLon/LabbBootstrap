@@ -3,6 +3,8 @@ body{
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	background-image: url("../../images/cover/cover3.jpg");
+	
 }
 
 /*******************************************/
@@ -12,8 +14,7 @@ div, aside, footer, nav, aside, button{
 	display: block;
 	width: 100%;
 	height: 100%;
-	margin: 0px;
-
+	margin: 0px;	
 	bottom: 0px;
 	font-family: sans-serif;
 /*	background-color: rgba(247, 247, 247, 0.5); */
@@ -27,4 +28,17 @@ p, h1, h2, h3, h4, h5, h5{
 	left: 0PX;
 	font-family: Arial;
 	text-align: center;
+}
+
+a{
+	margin: 0px;
+	padding: 0px;
+}
+
+button{
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border-color: none;
+	border-style: none;
 }

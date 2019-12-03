@@ -4,58 +4,83 @@
         <!--3rd Party content-->
         <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
         <!--Style-->
-        <link rel="stylesheet" type="text/css" href="../css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/style/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/style/crossPageStyle.css">
         <link rel="stylesheet" type="text/css" href="../css/style/indexStyle.css" media="screen"/>
         <!--Layout-->
-        <link rel="stylesheet" type="text/css" href="../css/layout/flex/indexFlex.css">
+        <link rel="stylesheet" type="text/css" href="../css/layout/flex/indexFlex.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/layout/flex/crossPageFlex.css" media="screen"/> 
     </head>
     <body>
-        <div id="Wrapper">
-            <div id="TopContainer" class="flex-row flex-row-1-item-1">
-                <nav id="Logo">
-                    <a id="LogoLink" class="mainNav-Link" href="index.html">
-                        <button id="LogoNav-Button" class="logo-button button">
-                            <img src="../images/icons/logo/logo1.png" alt="Page logotype" height="105px" width="135px">
-                        </button>
-                    </a>
-                </nav>
+        <div id="Wrapper" class="flex-column">
+            <div id="TopContainer" class="flex-row">
+                    <nav id="Logo">
+                        <a id="LogoLink" class="mainNav-Link" href="index.html">
+                            <button id="LogoNav-Button">
+                                <img src="../images/icons/logo/logo1.png" alt="Page logotype">
+                            </button>
+                        </a>
+                    </nav>
 
-                <div id="NavFlex" class="flex-column flex-row-1-item-2">
-                    <div class="flex-row-3-item-1"></div>
-                    <div class="flex-row-3-item-2"></div>
-                    <div class="flex-row-3-item-3">
-                        <nav id="MainNavBar" class="navBar navLink">
-                            <a id="Home" class="mainNav-Link navLink" href="index.html">
-                                <button id="Home" class="mainNav-button button">
-                                    <p class="mainNav-button-text">Home</p>
-                                </button>
-                            </a>
-                            <a id="Gallery" class="mainNav-Link navLink" href="gallery.html">
-                                <button id="Gallery" class="mainNav-button button">
-                                    <p class="mainNav-button-text">Gallery</p>
-                                </button>
-                            </a>
-                            <a id="ContactFrom" class="mainNav-Link navLink" href="contactForm.html">
-                                <button id="Gallery" class="mainNav-button button">
-                                    <p class="mainNav-button-text">Contact form</p>
-                                </button>
-                            </a>
-                        </nav>
-                    </div>
+                <div id="NavFlex" class="flex-column">
+                    <div></div>
+                    <nav id="MainNavBar" class="navBar">
+                        <a id="Link-Home" class="mainNav-Link navLink" href="index.html">
+                            <button id="Home" class="mainNav-button button">
+                                <p>Home</p>
+                            </button>
+                        </a>
+                        <a id="Link-Gallery" class="mainNav-Link navLink" href="gallery.html">
+                            <button id="Gallery" class="mainNav-button button">
+                                <p>Gallery</p>
+                            </button>
+                        </a>
+                        <a id="Link-ContactFrom" class="mainNav-Link navLink" href="contactForm.html">
+                            <button id="ContactForm" class="mainNav-button button">
+                                <p>Contact form</p>
+                            </button>
+                        </a>
+                    </nav>
+                    <div></div>
                 </div> 
             </div><!--END: TopContainer -->
             <div id="MiddleContainer">
                 <div id="Main-Content">
+                    <div class="spacer"></div>
                     <article>
                         <h1>Lovely articles for the reader</h1>
                         <p>Here I'm jus demonstrating a few articles filled with dummy text.</p>
                     </article>
-                    <article>Article 1</article>
-                    <article>Article 2</article>
-                    <article>Article 3</article>
-                    <article>Article 4</article>
-                    <article>Article 5</article>
-                    <article>Article 6</article>
+                    <div class="flex-row">
+                        <div class="spacer"></div>
+                        <div id="Articles" class="flex-row">
+                            <div class="flex-column">
+                                <article>Article 1</article>
+                                <article>Article 2</article>
+                                <article>Article 3</article>
+                                <article>Article 4</article>
+                                <article>Article 5</article>
+                                <article>Article 6</article>
+                            </div>
+                            <div class="flex-column">
+                                <article>Article 1</article>
+                                <article>Article 2</article>
+                                <article>Article 3</article>
+                                <article>Article 4</article>
+                                <article>Article 5</article>
+                                <article>Article 6</article>
+                            </div>
+                            <div class="flex-column">
+                                <article>Article 1</article>
+                                <article>Article 2</article>
+                                <article>Article 3</article>
+                                <article>Article 4</article>
+                                <article>Article 5</article>
+                                <article>Article 6</article>
+                            </div>
+                        </div>
+                        <div class="spacer"></div>
+                    </div>
                 </div>
             </div><!--END: MiddleContainer-->
             <footer id="Footer">
