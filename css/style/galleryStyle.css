@@ -1,0 +1,37 @@
+
+#Slideshow-Container{
+    height: 450px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+#Slide-1{
+    height: 450px;
+    width: auto;
+    overflow: hidden;
+}
+.slide-item{
+    max-height: 450px;
+    max-width: 1000px;
+}
+.slide-imge{
+    display: inline-block;
+    
+}
+
+.slide-text-number{
+    height: 20px;
+    width: 10px;
+}
+
+.slide-spacer{
+    height: 100%;
+    width: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.slide-spacer-inner{
+    height: 20px;
+    width: 100%;
+    background-color: orange;
+}

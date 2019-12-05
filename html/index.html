@@ -1,93 +1,90 @@
 <!DOCTYPE html>
-<body>
+<html>
     <head>
-        <!--3rd Party content-->
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--Theme-->
+
         <!--Style-->
-        <link rel="stylesheet" type="text/css" href="../css/style/default.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="../css/style/crossPageStyle.css">
+        <link rel="stylesheet" type="text/css" href="../css/style/default.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/style/crosspageStyle.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="../css/style/indexStyle.css" media="screen"/>
         <!--Layout-->
+        <link rel="stylesheet" type="text/css" href="../css/layout/flex/crosspageFlex.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="../css/layout/flex/indexFlex.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="../css/layout/flex/crossPageFlex.css" media="screen"/> 
     </head>
     <body>
         <div id="Wrapper" class="flex-column">
-            <div id="TopContainer" class="flex-row">
-                    <nav id="Logo">
-                        <a id="LogoLink" class="mainNav-Link" href="index.html">
-                            <button id="LogoNav-Button">
-                                <img src="../images/icons/logo/logo1.png" alt="Page logotype">
+            <div id="Upper-Wrapper" class="flex-row">
+                <div id="Upper-Wrapper-spacer-1" class="spacer"></div>
+                <div id="LogoFlex" class="flex-column">
+                    <div></div>
+                    <nav id=Logo>
+                        <a id="LogoLink">
+                            <button id="Logo-Button" class="main-nav-button">
+                                <img src="../images/logo/logo1mini.PNG" alt="logotype">
                             </button>
                         </a>
                     </nav>
-
+                    <div></div>
+                </div><!--END: LogoFlex-->
+                <div id="Upper-Wrapper-spacer-2" class="spacer"></div>
                 <div id="NavFlex" class="flex-column">
                     <div></div>
-                    <nav id="MainNavBar" class="navBar">
-                        <a id="Link-Home" class="mainNav-Link navLink" href="index.html">
-                            <button id="Home" class="mainNav-button button">
+                    <nav id="MainNav" class="navBar flex-row">
+                        <a id="NavLinkHome" class="navLink" href="index.html">
+                            <button id="Btn-Home" class="navButton button">
                                 <p>Home</p>
                             </button>
                         </a>
-                        <a id="Link-Gallery" class="mainNav-Link navLink" href="gallery.html">
-                            <button id="Gallery" class="mainNav-button button">
-                                <p>Gallery</p>
-                            </button>
+                        <a id="NavLinkGallery" class="navLink" href="gallery.html">
+                        <button id="Btn-Gallery" class="navButton button">
+                            <p>Gallery</p>
+                        </button>
                         </a>
-                        <a id="Link-ContactFrom" class="mainNav-Link navLink" href="contactForm.html">
-                            <button id="ContactForm" class="mainNav-button button">
+                        <a id="NavLinkContactForm" class="navLink" href="contactForm.html">
+                            <button id="Btn-ContactForm" class="navButton button">
                                 <p>Contact form</p>
                             </button>
                         </a>
                     </nav>
                     <div></div>
-                </div> 
-            </div><!--END: TopContainer -->
-            <div id="MiddleContainer">
-                <div id="Main-Content">
-                    <div class="spacer"></div>
-                    <article>
-                        <h1>Lovely articles for the reader</h1>
-                        <p>Here I'm jus demonstrating a few articles filled with dummy text.</p>
-                    </article>
-                    <div class="flex-row">
-                        <div class="spacer"></div>
-                        <div id="Articles" class="flex-row">
-                            <div class="flex-column">
-                                <article>Article 1</article>
-                                <article>Article 2</article>
-                                <article>Article 3</article>
-                                <article>Article 4</article>
-                                <article>Article 5</article>
-                                <article>Article 6</article>
-                            </div>
-                            <div class="flex-column">
-                                <article>Article 1</article>
-                                <article>Article 2</article>
-                                <article>Article 3</article>
-                                <article>Article 4</article>
-                                <article>Article 5</article>
-                                <article>Article 6</article>
-                            </div>
-                            <div class="flex-column">
-                                <article>Article 1</article>
-                                <article>Article 2</article>
-                                <article>Article 3</article>
-                                <article>Article 4</article>
-                                <article>Article 5</article>
-                                <article>Article 6</article>
-                            </div>
-                        </div>
-                        <div class="spacer"></div>
+                </div><!--END: NavFlex-->
+            </div>
+            <div id="Mid-Wrapper">
+                    <h1>Plenty of articles to enjoey!</h1>
+                    <h3>Here I'm demonstrating some lovely articels with dummy text.</h3>
+                <div class="flex-row">
+                    <div></div>
+                    <div class="flex-column">
+                        <article><p>Article 1</p></article>
+                        <article><p>Article 2</p></article>
+                        <article><p>Article 3</p></article>
                     </div>
+                    <div></div>
+                    <div class="flex-column">
+                        <article><p>Article 1</p></article>
+                        <article><p>Article 2</p></article>
+                        <article><p>Article 3</p></article>
+                    </div>
+                    <div></div>
+                    <div class="flex-column">
+                        <article><p>Article 1</p></article>
+                        <article><p>Article 2</p></article>
+                        <article><p>Article 3</p></article>
+                    </div>
+                    <div></div>
                 </div>
-            </div><!--END: MiddleContainer-->
-            <footer id="Footer">
-                <p>© Tobias Olsson</p>
-            </footer><!--END: footer-->
-        </div><!--END: Wrapper -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src=""></script>
+            </div>
+            <div id="Bottom-Wrapper" class="flex-column">
+                <div></div>
+                <div class="flex-row">
+                    <div></div>
+                    <footer id="Footer">
+                        <p>© Tobias Olsson</p>
+                    </footer>
+                    <div></div>
+                </div>
+                <div></div>
+            </div>
+        </div>
     </body>
-</body>
+</html>

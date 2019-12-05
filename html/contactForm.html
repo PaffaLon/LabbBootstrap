@@ -1,87 +1,68 @@
 <!DOCTYPE html>
-<body>
+<html>
     <head>
-        <!--3rd Party content-->
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--Theme-->
+
         <!--Style-->
-        <link rel="stylesheet" type="text/css" href="../css/style/default.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="../css/style/contactFormStyle.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="../css/style/crossPageStyle.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/style/default.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/style/crosspageStyle.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/style/indexStyle.css" media="screen"/>
         <!--Layout-->
-        <link rel="stylesheet" type="text/css" href="../css/layout/flex/contactFormFlex.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="../css/layout/flex/crossPageFlex.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/layout/flex/crosspageFlex.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../css/layout/flex/indexFlex.css" media="screen"/>
     </head>
     <body>
         <div id="Wrapper" class="flex-column">
-                <div id="TopContainer" class="flex-row">
-                        <nav id="Logo">
-                            <a id="LogoLink" class="mainNav-Link" href="index.html">
-                                <button id="LogoNav-Button">
-                                    <img src="../images/icons/logo/logo1.png" alt="Page logotype">
-                                </button>
-                            </a>
-                        </nav>
-    
-                    <div id="NavFlex" class="flex-column">
-                        <div></div>
-                        <nav id="MainNavBar" class="navBar">
-                            <a id="Link-Home" class="mainNav-Link navLink" href="index.html">
-                                <button id="Home" class="mainNav-button button">
-                                    <p>Home</p>
-                                </button>
-                            </a>
-                            <a id="Link-Gallery" class="mainNav-Link navLink" href="gallery.html">
-                                <button id="Gallery" class="mainNav-button button">
-                                    <p>Gallery</p>
-                                </button>
-                            </a>
-                            <a id="Link-ContactFrom" class="mainNav-Link navLink" href="contactForm.html">
-                                <button id="ContactForm" class="mainNav-button button">
-                                    <p>Contact form</p>
-                                </button>
-                            </a>
-                        </nav>
-                        <div></div>
-                    </div> 
-                </div><!--END: TopContainer -->
-            <div id="MiddleContainer" class="flex-column">
-                <div id="Main-Content" class="flex-column">
+            <div id="Upper-Wrapper" class="flex-row">
+                <div id="Upper-Wrapper-spacer-1" class="spacer"></div>
+                <div id="LogoFlex" class="flex-column">
                     <div></div>
-                    <article>
-                        <h1>Contact form</h1>
-                        <p>If you wish to contact us, do not hesitate and press that exaited button.</p>
-                    </article>
-                    <div></div>
-                    <div class="flex-row">
-                        <div></div>
-                        <form id="Usr-Contact-Form" class="flex-column">
-                            <p>Firstname:</p>
-                            <input type="text" name="firstname"></input>
-                            
-                            <spacer></spacer>
-                            <p>Lasttname:</p>
-                            <input type="text" name="lastname"></input>
-                            
-                            <spacer></spacer>
-                            <p>Mobilenumber:</p>
-                            <input type="text" name="mobilenumber"></input>
-                            
-                            <spacer></spacer>
-                            <p>Email:</p>
-                            <input type="text" name="email"></input>
-                            <button id="Cform-submit" class="button">
-                                <p>Sumbit</p>
+                    <nav id=Logo>
+                        <a id="LogoLink">
+                            <button id="Logo-Button" class="main-nav-button">
+                                <img src="../images/logo/logo1mini.PNG" alt="logotype">
                             </button>
-                        </form>
-                        <div></div>
-                    </div> 
+                        </a>
+                    </nav>
+                    <div></div>
+                </div><!--END: LogoFlex-->
+                <div id="Upper-Wrapper-spacer-2" class="spacer"></div>
+                <div id="NavFlex" class="flex-column">
+                    <div></div>
+                    <nav id="MainNav" class="navBar flex-row">
+                        <a id="NavLinkHome" class="navLink" href="index.html">
+                            <button id="Btn-Home" class="navButton button">
+                                <p>Home</p>
+                            </button>
+                        </a>
+                        <a id="NavLinkGallery" class="navLink" href="gallery.html">
+                        <button id="Btn-Gallery" class="navButton button">
+                            <p>Gallery</p>
+                        </button>
+                        </a>
+                        <a id="NavLinkContactForm" class="navLink" href="contactForm.html">
+                            <button id="Btn-ContactForm" class="navButton button">
+                                <p>Contact form</p>
+                            </button>
+                        </a>
+                    </nav>
+                    <div></div>
+                </div><!--END: NavFlex-->
+            </div>
+            <div id="Mid-Wrapper">
+    
+            </div>
+            <div id="Bottom-Wrapper" class="flex-column">
+                <div></div>
+                <div class="flex-row">
+                    <div></div>
+                    <footer id="Footer">
+                        <p>© Tobias Olsson</p>
+                    </footer>
+                    <div></div>
                 </div>
-            </div><!--END: MiddleContainer-->
-            <footer id="Footer">
-                <p>© Tobias Olsson</p>
-            </footer><!--END: footer-->
-        </div><!--END: Wrapper -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src=""></script>
+                <div></div>
+            </div>
+        </div>
     </body>
-</body>
+</html>
