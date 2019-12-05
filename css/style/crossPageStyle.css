@@ -17,7 +17,6 @@
 #Mid-Wrapper{
     height: 50%;
     width: 100%;
-    background-color: palevioletred;
 }
 #Bottom-Wrapper{
     max-height: 8%;
@@ -85,6 +84,8 @@
 }
 #Footer{
     height: 50px;
+    width: 100%;
+    bottom: 0px;
 }
 
 #Footer > p{

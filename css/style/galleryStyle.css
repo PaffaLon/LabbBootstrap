@@ -1,18 +1,17 @@
 
 #Slideshow-Container{
-    height: 450px;
+    height: 420px;
     width: 100%;
     position: relative;
     background-color: rgba(138, 43, 226, 0.5);
 }
 
 #Slide-1{
-    height: 450px;
+    height: 100%;
     width: auto;
-    overflow: hidden;
 }
 .slide-item{
-    max-height: 450px;
+    max-height: 420px;
     max-width: 1000px;
 }
 .slide-imge{
