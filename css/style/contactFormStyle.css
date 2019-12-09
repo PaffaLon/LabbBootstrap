@@ -1,0 +1,13 @@
+#ContactForm{
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+}
+#ContactForm > p{
+    text-align: left;
+    font-size: 1.3em;
+    
+}
+#ContactForm > input{
+
+}

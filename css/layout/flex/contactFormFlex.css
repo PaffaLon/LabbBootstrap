@@ -1,0 +1,19 @@
+#Mid-Wrapper{
+    display: flex;
+}
+
+#Mid-Wrapper-item-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ContactForm{
+    height: auto;
+    padding: 33px;
+
+    background-color: rgba(223, 223, 223, 0.5);
+}
+#ContactForm > input{
+    max-width: 200px;
+}
