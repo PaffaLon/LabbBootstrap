@@ -1,36 +1,20 @@
-
 #Slideshow-Container{
-    height: 420px;
-    width: 100%;
-    position: relative;
-    background-color: rgba(138, 43, 226, 0.5);
+    height: 600px;
+    width: 900px;
+    background-color: rosybrown;
 }
 
-#Slide-1{
-    height: 100%;
-    width: auto;
+#Image-Container{
+    height: 600px;
+    width: 900px;
 }
-.slide-item{
-    max-height: 420px;
-    max-width: 1000px;
-}
-.slide-imge{
-    display: inline-block;
-    
+#Image-Container > img{
+    width: 1200px;
+    height: 562px;
 }
 
-.slide-text-number{
-    height: 20px;
-    width: 10px;
-}
-
-.slide-spacer{
-    height: 100%;
-    width: 20px;
-    background-color: rgba(255, 0, 0, 0.5);
-}
-.slide-spacer-inner{
-    height: 20px;
-    width: 100%;
-    background-color: orange;
+.slideshow-Button{
+    height: 562px;
+    width: 60px;
+    background-color: rgba(188, 143, 143, 0.4);
 }

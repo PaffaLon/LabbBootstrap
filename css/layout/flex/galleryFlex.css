@@ -1,9 +1,11 @@
-
-#Slide-1{
+#Mid-Wrapper{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-around;
 }
-#flex-item-1{ order: 1; }
-#flex-item-2{ order: 2; }
-#flex-item-3{ order: 3; }
+
+#Slideshow-Container-1{
+    
+}
+#Slideshow-Button-Left{order: 1;}
+#Slideshow-Button-Right{order: 3;}
+#Image-Container{ order: 1;}

@@ -1,0 +1,10 @@
+#Main-Content{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(188, 143, 143, 0.5) ;
+
+}
+.article{
+    height: auto;
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+
+#Mid-Wrapper > h1, h3, div{
+    justify-content: space-evenly;
+}
+
+#Main-Content{
+    display: flex;
+    height: 100%;
+    width: auto;
+}
+.col-spacing{
+    display: flex;
+    background-color: wheat;
+    justify-content: space-around;
+}

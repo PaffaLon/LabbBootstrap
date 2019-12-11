@@ -10,7 +10,6 @@
 .flex-row{
     display: flex;
     flex-direction: row;
-
 }
 
 /******************************/
@@ -25,6 +24,16 @@
 #NavFlex { order: 4; }
 #Upper-Wrapper-spacer-1{order: 1}
 #Upper-Wrapper-spacer-2{order: 3}
+/********************************/
+/***    Mid Wrapper - Flex    ***/
+/**********************************/
+#Mid-Wrapper{
+    display: flex;
+    justify-items: space-evenly; 
+}
+
+/***    Bottom Wrapper - Flex    ***/
+
 
 
 #Logo{
