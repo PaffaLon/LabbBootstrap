@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <html lang="en"> 
+        <meta charset="utf-8"/>
+        <!--JS - Scripts-->
+        <script src="../js/slideShow.js"></script>
         <!--Theme-->
 
         <!--Style-->
@@ -11,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="../css/layout/flex/crosspageFlex.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="../css/layout/flex/galleryFlex.css" media="screen"/>
     </head>
-    <body>
+    <body onload="SlideshowReset()">
         <div id="Wrapper" class="flex-column">
             <div id="Upper-Wrapper" class="flex-row">
                 <div id="Upper-Wrapper-spacer-1" class="spacer"></div>
@@ -52,13 +56,19 @@
             <div id="Mid-Wrapper" class="flex-column">
                 <div id="Slideshow-Container-1" class="flex-row">
                     
-                    <button id="Slideshow-Button-Left" class="slideshow-Button button">
+                    <button id="Slideshow-Button-Left" class="slideshow-Button button" onclick="SlideLeft()">
                         <p> > </p>
                     </button>
-                    <div id="Image-Container">
-                        <img src="../images/slideShow/slide-1.jpg">
+                    
+                    <div id="Image-Container-1" class="img-Container">
+                        <img id="img-1" src="../images/slideShow/slide-1.jpg">
                     </div>
-                    <button id="Slideshow-Button-Right" class="slideshow-Button button">
+                    <div id="Image-Container-2" class="img-Container">
+                        <img id="img-2" src="../images/slideShow/slide-2.jpg">
+                    </div>
+                    
+
+                    <button id="Slideshow-Button-Right" class="slideshow-Button button" onclick="SlideRight()">
                         <p> < </p>
                     </button>
                 
@@ -76,5 +86,6 @@
                 <div></div>
             </div>
         </div>
+        
     </body>
 </html>

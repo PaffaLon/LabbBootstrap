@@ -4,8 +4,10 @@
 }
 
 #Slideshow-Container-1{
-    
+    display: flex;
+    justify-content: center;
 }
+
 #Slideshow-Button-Left{order: 1;}
+.img-Container{order: 2;}
 #Slideshow-Button-Right{order: 3;}
-#Image-Container{ order: 1;}
