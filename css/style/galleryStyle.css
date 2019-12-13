@@ -1,17 +1,20 @@
 #Slideshow-Container{
     height: 600px;
-    width: 1240px;
+    width: 1250px;
     background-color: rosybrown;
 }
 
 #Image-Container{
-    height: 600px;
+    height: 526px;
     width: 1240px;
 }
 #Image-Container-1 > img{
+    display: inline-block;
+    /*height: auto;
     width: 1200px;
-    height: 562px;
+    */
     background-size: cover;
+    position: relative;
 }
 
 .slideshow-Button{
