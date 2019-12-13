@@ -19,8 +19,10 @@
 
 .slideshow-Button{
     height: 562px;
-    width: 50px;
-    background-color: rgba(188, 143, 143, 0.9);
+    width: 60px;
+    background-color: rgba(22, 22, 22, 0.9);
+    color: whitesmoke;
+    font-size: 44pt;
     cursor: pointer; 
 }
 
