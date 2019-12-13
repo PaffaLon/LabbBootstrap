@@ -1,3 +1,13 @@
+let displayImage;
+let hideImage;
+let slideIndex;
+
+var slideShowImages = [5];
+slideShowImages[0] = ("img-1");
+slideShowImages[1] = ("img-2");
+slideShowImages[2] = ("img-3");
+slideShowImages[3] = ("img-4");
+slideShowImages[4] = ("img-5");
 /*
 const slideShowImages = {
     SildeshowImage_1: 'img-1',
@@ -7,70 +17,65 @@ const slideShowImages = {
     SildeshowImage_5: 'img-5'
 }*/
 
-const slideShowImages = [5];
-slideShowImages[0] = ("img-1");
-slideShowImages[1] = ("img-2");
-slideShowImages[2] = ("img-3");
-slideShowImages[3] = ("img-4");
-slideShowImages[4] = ("img-5");
-
-let displayImage;
-let hideImage;
-let slideIndex;
-
-
+/***********************************/
+/***    Slideshow-Button-Left    ***/
 function SlideLeft(){
     slideIndex -= 1;
-    if(slideIndex <= 1){
-        slideIndex = 1;
+    if(slideIndex <= 0){
+        slideIndex = 0;
     }
     GetSlideShowItem(slideIndex);
 }
-
+/***********************************/
+/**    Slideshow-Button-Right    ***/
 function SlideRight(){
     slideIndex += 1;
-    if(slideIndex >= 5){
-        slideIndex = 5;
+    if(slideIndex >= 4){
+        slideIndex = 4;
     }
     GetSlideShowItem(slideIndex);
 }
-
-
-
+/***    Get the requested imge elemnt    ***/
 function GetSlideShowItem(value){
-    
-    if(value == 1){   
+    console.clear();
+    if(value == 0){   
         console.log(">>> Display Img 1 <<<");
         HideAllItems();
         displayImage = slideShowImages[0];
     }
-    else if(value == 2){
-       console.log(">>> Display Img 2 <<<");
-       HideAllItems();
-       displayImage = slideShowImages[1];
+    else if(value == 1){
+        console.log(">>> Display Img 2 <<<");
+        HideAllItems();
+        displayImage = slideShowImages[1];
     }
-    else if(value == 3){
-       console.log(">>> Display Img 3 <<<");
-       HideAllItems();
-       displayImage = slideShowImages[2];
+    else if(value == 2){
+        console.log(">>> Display Img 3 <<<");
+        HideAllItems();
+        displayImage = slideShowImages[2];
+    }
+    else if(slideIndex == 3){
+        console.log(">>> Display Img 4 <<<");
+        HideAllItems();
+        displayImage = slideShowImages[3];
     }
     else if(slideIndex == 4){
-       console.log(">>> Display Img 4 <<<");
-       HideAllItems();
-       displayImage = slideShowImages[3];
-    }
-    else if(slideIndex == 5){
-       console.log(">>> Display Img 5 <<<");
-       HideAllItems();
+        console.log(">>> Display Img 5 <<<");
+        HideAllItems();
         displayImage = slideShowImages[4];
-    }
+    }/*
     else{
         console.log("Error: index overflow");
         console.log("Index Value: " + value);
-    }
+    }*/
     DisplaySlideShowItem(displayImage);
 }
 
+/********************************************/
+/***                                      ***/
+/**    Display & Hide, imge - Elements    ***/
+/***                                      ***/
+/********************************************/
+/***    Selects imge elements to hide    ****/
 function HideAllItems(){
     console.log("HideAllItems")
     for(i = 0; i <= 4; i ++){
@@ -79,7 +84,8 @@ function HideAllItems(){
         HideSlideShowItem(hideImage);
     }
 }
-
+/********************************/
+/***    Hides imge element    ***/
 function HideSlideShowItem(value){
     console.log("Element ID: " + value)
     console.log("-.-.-.-.-")
@@ -87,23 +93,17 @@ function HideSlideShowItem(value){
     document.getElementById(value).style.height = "0px";
     document.getElementById(value).style.visibility = "hidden";
 }
-
+/***********************************/
+/***    Displays imge element    ***/
 function DisplaySlideShowItem(value){
     document.getElementById(value).style.width = "1200px";
     document.getElementById(value).style.height = "562px";
     document.getElementById(value).style.visibility = "visible";
 }
-
-
-
-function SlideRightAnimation(){
-
-}
-function SlideLeftAnimation(){
-
-}
-
+/********************************************/
+/***    Reset Image Vissible / Hidden    ****/
 function SlideshowReset(){
     HideAllItems();
-    DisplaySlideShowItem(slideShowImages[0]);
+    slideIndex = 0;
+    /*DisplaySlideShowItem(slideShowImages[0]);*/
 }

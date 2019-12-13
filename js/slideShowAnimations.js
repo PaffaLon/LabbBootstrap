@@ -1,0 +1,6 @@
+function SlideRightAnimation(){
+
+}
+function SlideLeftAnimation(){
+
+}
