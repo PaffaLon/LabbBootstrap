@@ -30,11 +30,18 @@ p, h1, h2, h3, h4, h5, h5{
 	left: 0PX;
 	font-family: Arial;
 	text-align: center;
+	text-decoration: none;
 }
 
 a{
 	margin: 0px;
 	padding: 0px;
+}
+a::after{
+	text-decoration: none;
+}
+a:Link:Active, A:visited:active{
+	text-decoration: none;
 }
 
 button{

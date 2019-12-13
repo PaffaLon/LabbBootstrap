@@ -2,6 +2,7 @@
     width: 33%;
     display: flex;
     justify-content: space-around;
+    box-shadow: 20px 20px 10px 0px rgba(22, 22, 22, 0.8);
 }
 #ContactForm > p{
     text-align: left;
