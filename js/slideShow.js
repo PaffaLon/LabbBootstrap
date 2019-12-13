@@ -96,14 +96,15 @@ function HideSlideShowItem(value){
 /***********************************/
 /***    Displays imge element    ***/
 function DisplaySlideShowItem(value){
-    document.getElementById(value).style.width = "1200px";
+    document.getElementById(value).style.width = "100%";
     document.getElementById(value).style.height = "562px";
     document.getElementById(value).style.visibility = "visible";
+    document.getElementById(value).style.top = "0px";
 }
 /********************************************/
 /***    Reset Image Vissible / Hidden    ****/
 function SlideshowReset(){
     HideAllItems();
     slideIndex = 0;
-    /*DisplaySlideShowItem(slideShowImages[0]);*/
+    DisplaySlideShowItem(slideShowImages[0]);
 }
