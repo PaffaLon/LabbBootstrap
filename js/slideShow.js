@@ -35,6 +35,7 @@ function SlideRight(){
     }
     GetSlideShowItem(slideIndex);
 }
+/*******************************************/
 /***    Get the requested imge elemnt    ***/
 function GetSlideShowItem(value){
     console.clear();
